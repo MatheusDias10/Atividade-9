@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('../fonts/LibreBaskerville-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+}
+
+body {
+  background: #c9dbe6;
+  font-family: 'Dosis', Arial, sans-serif;
+  color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+main, .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+
+.menu-esq {
+  display: flex;
+  gap: 28px;
+}
+
+.menu-esq a {
+  color: #626262;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-esq a:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  height: 50px;
+  display: block;
+}
+
+.nav-dir {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icons-pares {
+  width: 100px;
+  height: auto;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #1b1b1b;
+  padding: 15px 17px;
+  cursor: pointer;
+}
+
+.btn-solid {
+  background: #007c89;
+  color: #fff;
+  border: none;
+  padding: 15px 16px;
+  cursor: pointer;
+}
+
+.btn-solid:hover {
+  opacity: .9;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px 80px;
+  gap: 80px;
+}
+
+.hero-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 550px;
+  margin-left: 100px;
+}
+
+.hero-texto h1 {
+  font-family: 'LibreBaskerville', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-texto p {
+  font-family: 'Dosis', sans-serif;
+  color: #5e5e5e;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.btn-cta {
+  background: #0e5c53;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+.hero-visual {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.janela {
+  position: relative;
+  background: #f4cfc2;
+  border: 2px solid #1b1b1b;
+  border-radius: 10px;
+  width: 420px;
+  padding: 28px 24px 24px;
+}
+
+.pontinhos {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 36px;
+}
+
+.mini-cart {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 26px;
+}
+
+.janela-titulo {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #c6563c;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+}
+
+.janela-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.produto-img {
+  width: 85%;
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+.cart-overlay {
+  position: absolute;
+  bottom: -35px;
+  right: -55px;
+  width: 260px;
+  z-index: 2;
+}
+
+.cart-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 #2a2a2a;
+  padding: 12px 16px 16px;
+  border: 1px solid #000;
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+}
+
+.cart-card h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+.cart-line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin-bottom: 8px;
+}
+
+.cart-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.btn-checkout {
+  background: #007c89;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Dosis', sans-serif;
+}
+
+.btn-checkout:hover {
+  opacity: 0.6;
+}
